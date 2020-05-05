@@ -17,12 +17,12 @@
         <nav class="nav">
             <ul>
                 <li class="logo">unsplash</li>
-                <li class="menu"><ion-icon name="menu-outline"></ion-icon></li>
+                <li class="menu"><ion-icon name="apps"></ion-icon></li>
                 <li class="collection">collection</li>
                 <li class="explore">explore</li>
                 <li class="search">search</li>
                 <li class="profile">
-                    <div class="img"></div>
+                <div class="img"></div>
                 </li>
             </ul>
         </nav>
@@ -34,14 +34,12 @@
         
 
             <div class="info">
-                <div class="info">
                     <ul>
                         <li>unsplash.com</li>
                         <li>@karinates</li>
                         <li>karinates.com</li>
-                        <li><ion-icon name="share-social-outline"></ion-icon></li>
+                        <li><ion-icon name="share-social"></ion-icon></li>
                     </ul>
-                </div>
             </div>
 
             <div class="text">
@@ -60,7 +58,63 @@
             </div>
         </div>
     </div>
+    <script>
 
+        TweenMax.to('.left',2,{
+            delay: 0.8,
+            width: '50%',
+            ease: Power2.easeInout
+        })
+
+        TweenMax.to('.right',2,{
+            delay: 0.6,
+            width: '50%',
+            ease: Power3.easeInout
+        })
+
+        TweenMax.from('.nav',2,{
+            delay: 0.8,
+            width: '50%',
+            ease: Expo.easeInout
+        })
+
+        TweenMax.from('.text h1',2,{
+            delay: 0.6,
+            x:1000,
+            ease: Circ.easeInout
+        })
+
+        TweenMax.from('.text p',2,{
+            delay: 0.7,
+            x:1000,
+            ease: Circ.easeInout
+        })
+
+        TweenMax.to('.karina',2,{
+            delay: 1.5,
+            width:'800px',
+            ease: Power2.easeInout
+        })
+
+        TweenMax.staggerFrom('.bottomnav ul li', 2,{
+            delay:1,
+            x:1000,
+            ease: Circ.easeInOut
+        },0.08)
+
+        TweenMax.staggerFrom('.info', 2,{
+            delay:1.5,
+            y:100,
+            ease: Circ.easeInOut
+        })
+
+        TweenMax.from('.name', 2,{
+            delay:1.5,
+            x:-600,
+            ease: Circ.easeInOut
+        })
+
+    </script>
 
 
 
